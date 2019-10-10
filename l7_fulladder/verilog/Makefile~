@@ -1,0 +1,6 @@
+top: four_bit_adder.v full_adder.v
+
+clean: 
+	rm -f top *~ *.vcd
+
+.PHONY: clean all
