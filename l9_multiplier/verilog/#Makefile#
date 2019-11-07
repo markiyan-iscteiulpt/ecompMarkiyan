@@ -1,8 +1,0 @@
-top: half_adder.v 2bit_multiplier.v 2bit_multiplier_tb.v
-	iverilog -o top half_adder.v 2bit_multiplier.v 2bit_multiplier_tb.vfour_bit_adder.v full_adder.v four_bit_adder_tb.v  
-	./top
-
-clean: 
-	rm -f top *~ *.vcd
-
-.PHONY: clean all
