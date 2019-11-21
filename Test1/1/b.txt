@@ -1,0 +1,13 @@
+Pergunta 1 
+
+b)
+
+Compute the profit margin PM
+
+
+PM = 1 - (C/S)
+
+TotalCost[C] = V * UC + NRE = 12M (da alinha a)
+TotalSales[S] = 22.5M (da alinha a)
+
+PM = 1 - 12/22.5 = 0.466

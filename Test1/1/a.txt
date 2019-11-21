@@ -1,0 +1,22 @@
+Pergunta 1
+
+a)
+
+Maximum product launch delay for profitability?
+
+TotalSales = area do triangulo = (15*3)/2 = 22.5M
+TotalCost = Volume * UnitaryCost + NRE = 10000 * 1000 + 2000000 = 12M
+
+TotalSales - TotalCost = 22.5M - 12M = 10.5M
+
+Portanto considerando LostRevenue = 10.5M:
+
+LostRevenue = TotalSales - SalesComDelay
+
+10.5 = 22.5 - ((W-d)^2*H)/2W)
+10.5 - 22.5 = - ((15-d)^2)/10
+
+
+d = 4.05 months
+
+Consluimos que com um delay inferior a 4.05 month ainda temos profit. Caso contrario, TotalSales < TotalCost.

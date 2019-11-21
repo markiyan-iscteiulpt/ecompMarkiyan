@@ -1,0 +1,4 @@
+Pergunta 2
+
+a) a funcao do circuito é elevar o numero a ao cubo.
+worst case latency é 2. O resultado é disponivel apos 2 ciclos de relogio.

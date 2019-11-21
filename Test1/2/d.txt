@@ -1,0 +1,7 @@
+Pergunta 2 
+
+d)
+
+Codigo encontra-se na pasta d.
+
+Versão combinatoria do mesmo circuito nao utiliza nenhum registo. o resultado é devolvido instantaneamente.

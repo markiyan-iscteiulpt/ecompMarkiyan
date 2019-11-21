@@ -1,0 +1,3 @@
+É possivel atingir um sample rate de um valor por clock.
+
+A latência maxima será de 2 ciclos, visto que podemos apresentar o resultado apos receber dois samples de dados.

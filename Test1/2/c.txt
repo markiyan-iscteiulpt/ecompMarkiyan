@@ -1,0 +1,5 @@
+Pergunta 2
+
+c)
+
+Circuito apresentado suporta pipeline visto que demora dois ciclos de clock a representar o resultado final. Se passarmos o valor do a e logo no proximo clock alteramos o a para a', o registo y fica com o presultado da multiplicacao do a*a e isto nao afecta o funcionamento correto do circuito.

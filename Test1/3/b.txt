@@ -1,0 +1,2 @@
+No sera necesária a unidade de controlo ja que todos os bits necessarios vem do datapath.
+
