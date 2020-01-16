@@ -1,0 +1,46 @@
+II
+
+
+a)
+
+8MB chip;
+8bit word;
+
+8MB/8b = 2e23 celulas;
+
+Uma possivel organizacao da DRAM seria: 
+	n cols = 2e11 = 2048 = 2KB (11 bits)
+	n rows = 2e12 = 4096 = 4KB (12 bits)
+
+
+Portanto, tendo 12 bits para selecionar as linhas e 11 para as colunas, o numero de pinos de IO sera 12, visto que podemos usar o memo numero de bits para as linhas e para as colunas.
+
+
+
+b)
+Cd = 400 fF; 
+Cc = 20 fF; 
+VDD = 1.8V; 
+deltaV = 80 mV; 
+ts = 5ps;
+----------------
+Ri = ?
+----------------
+
+C = (Cd*Cc)/(Cd+Cc) = 19 fF
+
+Vinf = [(cd-cc)/(cd+cc)]*(VDD/2) = 0.8 V
+
+ts = RC ln [(VDD/2-Vinf)/(VDD/2-deltaV-Vinf)] => R = 163.509 ohm.
+
+
+
+c)
+Refresh overhead (%) = Refresh duration / Refresh period
+
+Refresh period = n Rows * T row access;
+
+considerando que temos 4096 rows e T row access = 50e-12,
+	4096*50e-12 = 2.048e-7 = 204ns;
+
+refresh overhead = 204 nS/80us * 100 = 0.255% 

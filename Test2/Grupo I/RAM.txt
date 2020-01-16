@@ -1,0 +1,26 @@
+`timescale 1ns / 1ps
+
+module RAM (
+	input [9:0] address, 
+	input [7:0] data_in,
+	input we,
+	input clk,
+	input [7:0] data_out);
+
+
+	reg [7:0] mem[0:1023];
+
+	always @(negedge cs) begin
+
+		if(we)
+			mem[address] = data_in;
+		else
+			data_out = mem[address];
+
+    end
+
+    initial begin
+    	$readmemh ("memfile.hex", memreg, 0, 1023);
+    end
+    
+endmodule

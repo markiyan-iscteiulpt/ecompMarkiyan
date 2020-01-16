@@ -1,0 +1,21 @@
+III
+
+a)
+
+nº of address bits = log2(512MB) = 29 //para o endereco total (incl byte sel. bits);
+
+index bits = cache size / line size / num. ways = 8KB / 32B / 2 => 7bits;
+
+offset bits = log2(2e5*2e3/2e5) = 3 bits;
+
+byte sel bits = 32b word => 32b/8b = 4B => 2bits;
+
+tag bits = 29 - 7 - 3 - 2
+
+	17       7           3           2
+---------------------------------------------
+|  tag  |  index   |   offset  |  byte sel. |
+---------------------------------------------
+                   29
+
+b)

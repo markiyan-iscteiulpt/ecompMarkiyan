@@ -1,0 +1,21 @@
+I
+nº addresses = 2^10 = 1024
+size of RAM module = 2^10*1 = 1KB.
+
+
+a) RAM.txt
+
+1.b)
+	-Para construir a RAM, são precisos 32kB/1kB = 32 modulos feitos na a);
+	-O número de bits de endereço do novo modulo é de log2(32kB) = 15bits, onde:
+		-5 MSB bits são utilizados para selecionar o modulo pretendido;
+		-10 LSB bits para endereçar cada um dos módulos utilizados.
+
+
+
+c)
+	-Para construir a RAM, são precisos 16kB/1kB = 16 modulos feitos na a); 4 em paralelo => para construir a word de 32 bits pedida e 16 em linha, para serem 16KB.
+	Para endereçar este modulo, precisamos de um endereço de 16 bits, onde:
+		- 4 MSB são para selecionar a linha (que contem 32 bits de dados);
+		- 10 proximos bits sao para endereçar cada um dos modulos da linha selecionada;
+		- 2 LSB bits para selecionar "a coluna" (como sao 32 bits, 8 bits cada modulo e 4 modulos por linha => 2 bits);
